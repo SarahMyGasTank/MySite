@@ -6,7 +6,6 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const monk = require('monk');
 const session = require('express-session');
-const bcrypt = require('bcrypt');
 const db = monk('localhost:27017/travelexperts');
 const mongo = require("mongodb").MongoClient;
 const url = "mongodb://localhost:27017/travelexperts";
@@ -36,18 +35,6 @@ app.use('/', indexRouter);
 //app.use('/users', usersRouter);
 console.log("router set");
 
-app.post("/post_form", (req, res) => {
-  const saltRounds = 10;
-  const myPlaintextPassword = req.body.password;
-  bcrypt.genSalt(saltRounds, function (err, salt) {
-    bcrypt.hash(myPlaintextPassword, salt, function (err, hash) {
-      //console.log("Plain pwd: " + myPlaintextPassword);
-      //console.log("Hashed pwd: " + hash);
-      formData[10] = hash;
-    });
-  });
-
-});
 
 // Sarah Hanson -> I have no idea what this was used for
 function sort_by_key(array, key) {
