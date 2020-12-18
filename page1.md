@@ -12,8 +12,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXF39MS"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <h1>Hello World</h1>
+        <h1>Page2</h1>
         <p>I'm hosted with GitHub Pages.</p>
-        <a href="page1.md">Page 2</a>
+        <a href="index.md">Page 1</a>
     </body>
 </html>
