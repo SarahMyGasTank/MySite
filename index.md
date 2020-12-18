@@ -14,6 +14,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- End Google Tag Manager (noscript) -->
         <h1>Hello World</h1>
         <p>I'm hosted with GitHub Pages.</p>
-        <a href="page1.md">Page 2</a>
+        <a href="page1.html">Page 2</a>
     </body>
 </html>
